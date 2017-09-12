@@ -1,0 +1,68 @@
+{
+    "manifestVersion": 1,
+    "id": "backuputility",
+    "name": "Backup Utility",
+    "version": "1.0.3",
+    "publisher": "mohdaslamansari",
+	"public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "This utility is for taking the backup of the folder and all its files and subfolders. It will help in taking the backup of website files and folders before updating them.",
+    "categories": [
+        "Build and release"
+    ],
+	"tags": [
+        "Backup",
+        "Copy"
+    ],
+	"branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+	"content": {
+        "details": {
+            "path": "readme.md"
+        }
+      },
+	   "links": {
+	    "repository": {
+            "uri": "https://github.com/mdaslamansari/backuputility"
+        },
+        "support": {
+            "uri": "https://mdaslam.wordpress.com/"
+        }		
+    },
+	"repository": {
+        "type": "git",
+        "uri": "https://github.com/mdaslamansari/backuputility"
+    },
+	"screenshots": [
+        {
+            "path": "screenshots/screen.png"
+        }
+    ],
+    "icons": {
+        "default": "images/icon.png"        
+    },
+    "files": [
+        {
+            "path": "buildtask",
+			"addressable": true
+        }		
+    ],
+	"contributions": [
+        {
+            "id": "custom-build-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildtask"
+            }
+        }
+    ]
+}
